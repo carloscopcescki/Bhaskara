@@ -12,6 +12,7 @@ c = float(input("Digite o valor de C: "))
 # Valor de delta (Δ)
 # Δ = b² - 4 * A * C
 def calculo_delta(a,b,c):
+    """Função para calcular o valor de delta da expressão"""
     b = b**2
     delta = b - 4 * (a) * (c)
     return delta
@@ -25,10 +26,12 @@ print(f"\nO valor de Δ é: {delta}")
 # Fórmula de Bhaskara
 # X = −b ± √​​Δ / 2a
 def formula_bhaskara_x1(b,a,raiz_delta):
+    """Função para calcular o valor da raiz de delta positiva"""
     x1 = (-(b) + raiz_delta) / (2 * a)
     return x1
 
 def formula_bhaskara_x2(b,a,raiz_delta):
+    """Função para calcular o valor da raiz de delta negativa"""
     x2 = (-(b) - raiz_delta) / (2 * a)
     return x2
 
